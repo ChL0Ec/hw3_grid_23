@@ -8,8 +8,12 @@ body{
   line-height: 1.15;
   margin: 0;
   padding: 0;
+  line-height: 2;
 }
-
+header, nav{
+  padding: 10px 5px;
+  margin: 3px 5px;
+}
 
 .overview{
   background-attachment: fixed; /* Parallax effect */
@@ -43,11 +47,12 @@ h2{
 nav li{
   display:inline;
   padding-right:20px;
-
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
 nav a{
-  color: black;
+  color: blue;
   font-weight: bold;
   text-decoration: none; 
 }
@@ -100,16 +105,19 @@ footer{
   }
 }
 
-
+a:visited{
+  color: black;
+  text-decoration: underline wavy black;
+}
 
 /*Your Code Here*/
 /* PLEASE DO NOT REMOVE MY COMMENTS.  THEY HELP US HELP YOU DEBUG. */
 
 /* Step 1: Write selector/rule property to add an underline when
 links in the navigation are in the hover or focus state.*/
-a:hover{
+/* a:hover{
   text-decoration: underline;
-}
+} */
 
 a:focus, :focus{
   text-decoration: underline;
@@ -187,9 +195,8 @@ first div in the grid  and place it in the grid. */
 
  /* Step 8: Write the selector/rule property to style the .text-block class. */
 .text-block{
-  /* border: 30px dashed blue; */
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   align-items: center;
   justify-content: center;
   text-align: center;
